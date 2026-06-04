@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Belgravia Dance | Book a Lesson</title><meta name="description" content="Book a dance lesson with Hannah Lancaster at Belgravia Dance. Request adult or children's private tuition in London."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/book.Co2-hABZ.css"></head> <body style="--page-background-image: url(/_astro/03.Dw3nNpi3.webp); --page-background-position: left center;"> <header class="site-header"> <div class="shell header-inner"> <a class="brand" href="/"> <span class="brand-mark">Belgravia Dance</span> <span class="brand-copy">Private tuition with Hannah Lancaster</span> </a> <nav class="nav" aria-label="Primary"> <a href="/">Adult Lessons</a><a href="/childrens-lessons/">Children&#39;s Lessons</a><a href="/book/" aria-current="page">Book a Lesson</a> </nav> </div> </header> <main class="shell">  <section class="hero"> <div class="hero-grid"> <div> <span class="eyebrow">Booking</span> <h1>Request your lesson with Hannah Lancaster.</h1> <p class="hero-copy">
+Use the booking form below to enquire about availability for private adult coaching or children's dance
+          lessons. The form is configured to open an email draft, making it easy to adapt once final contact details are confirmed.
+</p> </div> <div class="portrait"> <div class="portrait-panel"> <strong>Preferred lesson</strong> <p class="muted">Adult lesson</p> </div> </div> </div> </section> <section class="stack"> <div class="section-panel booking-grid"> <div> <h2>Booking details</h2> <p class="muted">
+Share a few details and the form will prepare an enquiry email to Hannah. This keeps the site fully static
+          while still giving visitors a practical way to request a lesson.
+</p> <div class="details-grid"> <div class="detail"><span>Teacher</span><strong>Hannah Lancaster</strong></div> <div class="detail"><span>Location</span><strong>Belgravia and wider London</strong></div> <div class="detail"><span>Lesson types</span><strong>Adult and children's private tuition</strong></div> <div class="detail"><span>Response style</span><strong>Email consultation and scheduling</strong></div> </div> </div> <form id="booking-form" data-default-lesson="Adult lesson"> <label>
+Your name
+<input name="name" type="text" placeholder="Full name" required> </label> <label>
+Email address
+<input name="email" type="email" placeholder="you@example.com" required> </label> <label>
+Lesson type
+<select name="lessonType"> <option selected>Adult lesson</option> <option>Children's lesson</option> </select> </label> <label>
+Preferred day or time
+<input name="timing" type="text" placeholder="Weekday evenings, Saturday mornings..."> </label> <label>
+Tell us a little more
+<textarea name="notes" placeholder="Experience level, goals, age of child if relevant, preferred location, or anything else Hannah should know."></textarea> </label> <button class="button primary" type="submit">Create booking email</button> <p class="fine-print">
+The email currently targets <strong>hello@belgraviadance.co.uk</strong>. You can replace this address later if needed.
+</p> </form> </div> </section> <script type="module">const t=document.getElementById("booking-form");t instanceof HTMLFormElement&&t.addEventListener("submit",i=>{i.preventDefault();const e=new FormData(t),n=String(e.get("name")??"").trim(),s=String(e.get("email")??"").trim(),o=String(e.get("lessonType")??t.dataset.defaultLesson??"Lesson enquiry"),m=String(e.get("timing")??"").trim(),r=String(e.get("notes")??"").trim(),a=encodeURIComponent(`${o} enquiry from ${n}`),d=encodeURIComponent([`Name: ${n}`,`Email: ${s}`,`Lesson type: ${o}`,`Preferred time: ${m||"Not specified"}`,"","Additional details:",r||"None provided"].join(`
+`));window.location.href=`mailto:hello@belgraviadance.co.uk?subject=${a}&body=${d}`});</script>  </main> <footer class="shell footer"> <div class="footer-panel"> <div> <strong>Belgravia Dance</strong><br>
+Elegant, expert-led dance lessons in London.
+</div> <div>Hannah Lancaster • Private coaching • Wedding dances • Young performers</div> </div> </footer> </body></html>
